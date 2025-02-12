@@ -52,7 +52,7 @@ def generate_diagonal_dominant_matrix_and_answer(n, lower_bound, upper_bound):
     answer = [random.randint(lower_bound, upper_bound) for _ in range(n)]
     return matrix, answer
 
-n = 20
+n = 5
 matrix, answer = generate_diagonal_dominant_matrix_and_answer(n, lower_bound=-1000, upper_bound=1000)
 print("Original matrix:")
 show_matrix(matrix, answer, upper_bound=10000)
