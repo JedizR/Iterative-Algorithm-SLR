@@ -51,11 +51,10 @@ def generate_diagonal_dominant_matrix_and_answer(n, lower_bound, upper_bound):
     answer = [random.randint(lower_bound, upper_bound) for _ in range(n)]
     return matrix, answer
 
-n = 5
+n = 8
 matrix, answer = generate_diagonal_dominant_matrix_and_answer(n, lower_bound=-1000, upper_bound=1000)
 print("Original matrix:")
 show_matrix(matrix, answer, upper_bound=10000)
-x, iterations = jacobi_method(matrix, answer, n, max_iterations=10, precision=1e-12, printing=True, print_precision=8)
-print(f"Jacobi Initial Value: {x}")
+x, iterations = jacobi_method(matrix, answer, n, max_iterations=100, precision=1e-12, printing=True, print_precision=5)
 print(f"Jacobi Solution: {x} | iterations: {iterations}")
-print(f"Numpy Solution: {np.linalg.solve(matrix,answer)}") #
+print(f"Numpy Solution: {np.linalg.solve(matrix,answer)}")
