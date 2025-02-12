@@ -15,3 +15,4 @@
 
 ## Convergency Plot
 <img width="993" alt="Image" src="https://github.com/user-attachments/assets/51448afb-3897-4858-937c-9cf5caefeddd" />
+<img width="694" alt="Image" src="https://github.com/user-attachments/assets/2c71a97d-f4b4-4a08-a93b-39c7ddf34ea4" />
