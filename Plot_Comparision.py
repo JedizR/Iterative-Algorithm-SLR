@@ -67,7 +67,7 @@ def generate_diagonal_dominant_matrix_and_answer(n, lower_bound, upper_bound):
     matrix = [[random.randint(lower_bound, upper_bound) for _ in range(n)] for _ in range(n)]
     for i in range(n):
         row_sum = sum(abs(matrix[i][j]) for j in range(n) if j != i)
-        matrix[i][i] = row_sum + random.randint(10, 20)  # Stronger diagonal dominance
+        matrix[i][i] = row_sum + random.randint(10, 20)
     return matrix, [random.randint(lower_bound, upper_bound) for _ in range(n)]
 
 jacobi_plots.clear()
