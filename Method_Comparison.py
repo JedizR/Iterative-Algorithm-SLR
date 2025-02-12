@@ -23,7 +23,7 @@ def jacobi_method(matrix,
             break
         x = copy.deepcopy(x_new)
     
-    return x_new, iterations+1
+    return list(map(float,x_new)), iterations+1
 
 def gauss_seidel_method(matrix, 
                   answer, 
@@ -46,7 +46,7 @@ def gauss_seidel_method(matrix,
             break
         x = copy.deepcopy(x_new)
     
-    return x_new, iterations+1
+    return list(map(float,x_new)), iterations+1
 
 def should_stop(v0, v1, epsilon):
     s = 0
@@ -75,11 +75,20 @@ def generate_diagonal_dominant_matrix_and_answer(n, lower_bound, upper_bound):
     gen_answer = [random.randint(lower_bound, upper_bound) for _ in range(n)]
     return matrix, gen_answer
 
-n = 10
+def Hilbert_matrix_generator(n):
+    H = np.zeros((n, n))
+    answer = [random.randint(1, 100) for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            H[i][j] = 1 / (i + j + 1)
+    return H, answer
+
+n = 5
 lower_bound = -10
 upper_bound = 10
-precision = 1e-6
-matrix, answer = generate_diagonal_dominant_matrix_and_answer(n, lower_bound=lower_bound, upper_bound=upper_bound)
+precision = 1e-5
+# matrix, answer = generate_diagonal_dominant_matrix_and_answer(n, lower_bound=lower_bound, upper_bound=upper_bound)
+matrix, answer = Hilbert_matrix_generator(n)
 print("Original matrix:")
 show_matrix(matrix, answer, upper_bound=upper_bound)
 print("--------------------------------")
