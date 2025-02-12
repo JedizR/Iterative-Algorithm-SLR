@@ -13,6 +13,10 @@
 ## Comparison
 <img width="967" alt="Image" src="https://github.com/user-attachments/assets/d89fb56d-f9cd-4452-94b3-621cfcd571d7" />
 
-## Convergency Plot
+## Convergency Plot (Normal Scale)
+<img width="996" alt="Image" src="https://github.com/user-attachments/assets/10cb57e4-b27e-405e-9bec-b6699e9e8a9e" />
+<img width="695" alt="Image" src="https://github.com/user-attachments/assets/a39cfd4d-7c3b-46bc-b1f3-d4d04348399d" />
+
+## Convergency Plot (Log Scale)
 <img width="993" alt="Image" src="https://github.com/user-attachments/assets/51448afb-3897-4858-937c-9cf5caefeddd" />
 <img width="694" alt="Image" src="https://github.com/user-attachments/assets/2c71a97d-f4b4-4a08-a93b-39c7ddf34ea4" />
