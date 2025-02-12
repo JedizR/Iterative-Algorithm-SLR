@@ -87,8 +87,8 @@ n = 5
 lower_bound = -10
 upper_bound = 10
 precision = 1e-5
-# matrix, answer = generate_diagonal_dominant_matrix_and_answer(n, lower_bound=lower_bound, upper_bound=upper_bound)
-matrix, answer = Hilbert_matrix_generator(n)
+matrix, answer = generate_diagonal_dominant_matrix_and_answer(n, lower_bound=lower_bound, upper_bound=upper_bound)
+# matrix, answer = Hilbert_matrix_generator(n)
 print("Original matrix:")
 show_matrix(matrix, answer, upper_bound=upper_bound)
 print("--------------------------------")
